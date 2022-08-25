@@ -22,25 +22,32 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
-# this should print: true
+puts "Is number_teachers less than number_students?", number_teachers < number_students
+# this should print: "Is numberTeachers less than numberStudents?" true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
-# this should print: false
+puts "Is number_teachers equal to string_teachers?", number_teachers == number_students
+# this should print: "Is numberTeachers equal to numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
-# this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
+# this should print: "Is numberTeachers not equal to numberStudents?" true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
-# this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
+# this should print: "Is numberStudents greater than or equal to 20?" true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
-# this should print: false
+puts "Is number_students greater than or equal to 21?", number_students >= 21
+# this should print: "Is numberStudents greater than or equal to 21?" false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
-# this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
+# this should print: "Is numberStudents less than or equal to 20?" true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
-# this should print: true
+puts "Is number_students less than or equal to 21?", number_students <= 21
+# this should print: "Is numberStudents less than or equal to 21?" true
 
 
 #-------------------
@@ -52,22 +59,26 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
-puts 4 < 9
-#YOU DO: Explain.
+puts "Is 4 less than 9?", 4 < 9
+# YOU DO: Explain.
+# this should print: true (because 4 is less than 9)
 
 books = 3
-puts 4 < books
+puts "Is 4 greater than books when books is equal to 3?", 4 < books
 # YOU DO: Explain.
+# this should print: false (because the value of books is 3, and 4 is not less than 3)
 
 friends = 6
 siblings = 2
-puts friends > siblings
+puts "Are there more friends than siblings when friends is equal to 6 and siblings equal to 2?", friends > siblings
 # YOU DO: Explain.
+# this should print: true (because 6 is greater than 2, and those are the corresponding values)
 
 attendees = 9
 meals = 8
-puts attendees != meals
+puts "Is the number of attendees not equal to the number of meals if there are 9 attendees and 8 meals?", attendees != meals
 # YOU DO: Explain.
+# this should print: true (because 9 is not equal to 8, and those are the corresponding values)
 
 
 #-------------------
@@ -79,9 +90,9 @@ finished_homework = false
 
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
-is_hungry && finished_homework
+puts "Is the user hungry and have they completed their homework?", is_hungry && finished_homework
 # Determine if the user is hungry or has completed their homework
-is_hungry || finished_homework
+puts "Is the user hungry, or have they completed their homework?", is_hungry || finished_homework
 
 loves_to_play = true
 loves_dog_park = false
@@ -90,15 +101,15 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts "Does the dog love to play and love treats?", loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts "Does the dog love to play and love the dog park?", loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts "Does the dog love to play or love the dog park?", loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts "Does the dog love to play and is a puppy?", loves_to_play && age <= 1
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: the line should print "true" because a puppy is less than or equal to 1, AND the loves_to_play value is "true"
